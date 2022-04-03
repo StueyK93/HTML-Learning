@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<style>
+    p {
+        font-family: "Helvetica", sans-serif;
+        color: white;
+    }
+
+    body {
+        background-color: #12151D;
+    }
+    #bold{
+        font-weight: bold;
+    }
+    #colour{
+        color: red;
+    }
+    #colour2{
+        color: blue;
+    }
+    #underline{
+        text-decoration-line: underline;
+    }
+</style>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Html learning</title>
+</head>
+
+<body>
+
+    <p id="Hello">Head to Youtube</p>
+    <p id="Default">Reset text</p>
+    <p id="bold">Make text Bold</p>
+    <p id="no-bold">Remove Bold!</p>
+    <p id="colour">Change text Red!</p>
+    <p id="colour2">Change text Blue!</p>
+    <p id="underline">Underline text!</p>
+    <p id="no-ul">Remove Underline!</p>
+
+    <br />
+
+    <input id="input" type="text" placeholder="Enter StuK93's Name"/>
+    <button id="submit">Submit</button>
+
+    <script>
+
+        document.getElementById('submit').onclick = function () {
+            if (document.getElementById('input').value == "Stuart") {
+                alert("That's right!")
+                alert(document.getElementById('input').value + " Thank you for entering your name.")
+            }
+            else {
+                alert("Incorrect, please try again")
+            }
+        }
+
+        document.getElementById('Default').onclick = function () {
+            document.getElementById('Hello').style.color = "white"
+            document.getElementById('Hello').style.textDecoration = "none"
+            document.getElementById('Hello').style.fontWeight = "normal"
+        }
+        document.getElementById('Hello').onclick = function () {
+            alert('Hello There!')
+        }
+        document.getElementById('bold').onclick = function () {
+            document.getElementById('Hello').style.fontWeight = "bold"
+        }
+        document.getElementById('no-bold').onclick = function () {
+            document.getElementById('Hello').style.fontWeight = "normal"
+        }
+        document.getElementById('colour').onclick = function () {
+            document.getElementById('Hello').style.color = "red"
+        }
+        document.getElementById('colour2').onclick = function () {
+            document.getElementById('Hello').style.color = "blue"
+        }
+        document.getElementById('underline').onclick = function () {
+            document.getElementById('Hello').style.textDecoration = "underline"
+        }
+        document.getElementById('no-ul').onclick = function () {
+            document.getElementById('Hello').style.textDecoration = "none"
+        }
+    </script>
+</body>
+</html>
