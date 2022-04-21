@@ -3,7 +3,7 @@
 <style>
     p {
         font-family: "Helvetica", sans-serif;
-        color: white;
+        color: #ffffff;
     }
 
     body {
@@ -18,6 +18,9 @@
     #colour2{
         color: blue;
     }
+    #no-colour{
+        color: #ffffff;
+    }
     #underline{
         text-decoration-line: underline;
     }
@@ -31,11 +34,12 @@
 <body>
 
     <p id="Hello">Head to Youtube</p>
-    <p id="Default">Reset text</p>
+    <p id="Default">Remove all formatting</p>
     <p id="bold">Make text Bold</p>
     <p id="no-bold">Remove Bold!</p>
     <p id="colour">Change text Red!</p>
     <p id="colour2">Change text Blue!</p>
+    <p id="no-colour">Reset text Colour!</p>
     <p id="underline">Underline text!</p>
     <p id="no-ul">Remove Underline!</p>
 
@@ -48,10 +52,6 @@
 
         document.getElementById('submit').onclick = function () {
             if (document.getElementById('input').value == "Stuart") {
-            /* Add <iframe></iframe> feature into body that is empty, but use
-             * the script borders here to define what site, such as atlassian with the
-             * user's input that makes the iframe "active" or visible?
-             */
             }
             else {
                 alert("Incorrect, please try again")
@@ -64,7 +64,7 @@
             document.getElementById('Hello').style.fontWeight = "normal"
         }
         document.getElementById('Hello').onclick = function () {
-            alert('Hello There!')
+            window.open("http://youtube.com")
         }
         document.getElementById('bold').onclick = function () {
             document.getElementById('Hello').style.fontWeight = "bold"
@@ -77,6 +77,9 @@
         }
         document.getElementById('colour2').onclick = function () {
             document.getElementById('Hello').style.color = "blue"
+        }
+        document.getElementById('no-colour').onclick=function (){
+            document.getElementById('Hello').style.color = "#ffffff"
         }
         document.getElementById('underline').onclick = function () {
             document.getElementById('Hello').style.textDecoration = "underline"
