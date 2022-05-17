@@ -1,0 +1,11 @@
+.contact_form{
+	padding-left:10px;
+	padding-top:15px;
+}
+select{
+	text-align-last:center;
+}
+label{
+	display:inline-block;
+	width: 150px
+}
