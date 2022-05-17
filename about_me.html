@@ -6,22 +6,77 @@
     <meta name="author" content="Stuart Keane"> <meta name="description" content="HTML experimentation for web development">
     <link rel="icon" href="images/favicon.ico">
     <title>Contact</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/nav_styles.css">
+	<link rel="stylesheet" href="styles/form_styles.css">
 </head>
 <body>
-    <h1>Title of page</h1>
+    <h1>Contact Me</h1>
 <h2>Contents</h2>
+<nav>
 <div class="menuedge"></div>
     <div class="menu">
 <ul>
     <div class="tooltip"><li><a href="index.html">Home</a></li>
     <span class="tt_text">Home</span></div><br>
-    <li>About Me</li>    
+    <div class="tooltip"><li><a href="about_me.html">About Me</a></li>
+    <span class="tt_text">Coming soon!</span></div><br>
     <div class="tooltip"><li><a href="blog.html">Blog</a></li>
     <span class="tt_text">Blog</span></div><br>
-    <div class="tooltip"><li><a href="contact_me.html">Contact Me</a></li>
-    <span class="tt_text">Contact me</span></div><br>  
-</ul>
+    <li>Contact Me</li>
+</ul>                
 </div>
+</nav>
+<div class="contact_form">
+	<p>Please use the below form to contact me for business enquiries</p>
+	<form action="process.php" method="post">
+	<p>
+		<label for="name">Full Name: </label>
+		<input type="text" name="name">
+	</p>
+	<p>
+		<label for="email">Email Address: </label>
+		<input type="text" name="email">
+	</p>
+	<p>
+		<label for="phone">Contact Number: </label>
+		<input type="text" name="phone">
+	</p>
+	<p>
+		<label for="call">Best time to call:</label><br>
+		<input type="radio" name="call" value="morning" checked>Morning<br>
+		<input type="radio" name="call" value="afternoon">Afternoon<br>
+		<input type="radio" name="call" value="evening">Evening
+	</p>
+	<p>
+		<label for="reason">Reason for email: </label>
+		<select type="list" name="reason">
+			<option>--Select--</option>
+			<option value="collab">Collaboration</option>
+			<option value="charity">Charity Event</option>
+			<option value="gen_q">General Enquiry</option>
+			<option value="sponsor">Sponsorship</option>		
+		</select>
+	</p>
+	<p>
+		<label for="pref">Call preferences: (check all that apply) </label>
+		<table>
+			<tr>
+				<td><input type="checkbox" name="pref" value="video">Video Call</td>
+				<td><input type="checkbox" name="pref" value="email">Email</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="pref" value="mob">Mobile Call</td>
+				<td><input type="checkbox" name="pref" value="meet">In Person Meeting</td>
+			</tr>
+		</table>			
+	</p>
+	<p>
+	<input type="submit" name="submit" value="Submit">
+	</p>
+	</form>
+
+</div>
+
 </body>
 </html>
