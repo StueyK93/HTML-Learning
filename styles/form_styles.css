@@ -1,6 +1,7 @@
 .contact_form{
 	padding-left:10px;
-	padding-top:15px;
+	padding-top:5px;
+	font-size:13px;
 }
 select{
 	text-align-last:center;
@@ -8,4 +9,8 @@ select{
 label{
 	display:inline-block;
 	width: 150px
+}
+td{
+	color:#fff;
+	font-family: sans-serif;
 }

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en-GB">
 <head>
     <meta charset="utf-8">
-    <meta name="author" content="Stuart Keane"> <meta name="description" content="HTML experimentation for web development">
-    <link rel="icon" href="images/favicon.ico">
-    <title>Contact</title>
+    <meta name="author" content="Stuart Keane"><meta name="description" content="HTML experimentation for web development">
+    <link rel="icon" href="images/SK.ico">
+    <title>Contact Me</title>
     <link rel="stylesheet" href="styles/styles.css">
 	<link rel="stylesheet" href="styles/nav_styles.css">
 	<link rel="stylesheet" href="styles/form_styles.css">
@@ -18,11 +17,11 @@
     <div class="menu">
 <ul>
     <div class="tooltip"><li><a href="index.html">Home</a></li>
-    <span class="tt_text">Home</span></div><br>
+    <span class="tt_text">Return to the Homepage</span></div><br>
     <div class="tooltip"><li><a href="about_me.html">About Me</a></li>
     <span class="tt_text">Coming soon!</span></div><br>
     <div class="tooltip"><li><a href="blog.html">Blog</a></li>
-    <span class="tt_text">Blog</span></div><br>
+    <span class="tt_text">My day to day</span></div><br>
     <li>Contact Me</li>
 </ul>                
 </div>
@@ -44,9 +43,9 @@
 	</p>
 	<p>
 		<label for="call">Best time to call:</label><br>
-		<input type="radio" name="call" value="morning" checked>Morning<br>
-		<input type="radio" name="call" value="afternoon">Afternoon<br>
-		<input type="radio" name="call" value="evening">Evening
+		<input type="radio" name="call" id="morn" value="morning" checked><label for="morn">Morning</label><br>
+		<input type="radio" name="call" id="afte" value="afternoon"><label for="afte">Afternoon</label><br>
+		<input type="radio" name="call" id="even" value="evening"><label for="even">Evening</label><br>
 	</p>
 	<p>
 		<label for="reason">Reason for email: </label>
@@ -58,16 +57,16 @@
 			<option value="sponsor">Sponsorship</option>		
 		</select>
 	</p>
-	<p>
-		<label for="pref">Call preferences: (check all that apply) </label>
+	<p id="checkboxes">
+		<label for="pref">Call preferences: <br>(check all that apply) </label>
 		<table>
 			<tr>
-				<td><input type="checkbox" name="pref" value="video">Video Call</td>
-				<td><input type="checkbox" name="pref" value="email">Email</td>
+				<td><input type="checkbox" name="pref" id="video" value="video"><label for="video">Video Call</label></td>
+				<td><input type="checkbox" name="pref" id="email" value="email"><label for="email">Email</label></td>
 			</tr>
 			<tr>
-				<td><input type="checkbox" name="pref" value="mob">Mobile Call</td>
-				<td><input type="checkbox" name="pref" value="meet">In Person Meeting</td>
+				<td><input type="checkbox" name="pref" id="mob" value="mob"><label for="mob">Mobile Call</label></td>
+				<td><input type="checkbox" name="pref" id="meet" value="meet"><label for="meet">In Person Meeting</label></td>
 			</tr>
 		</table>			
 	</p>
