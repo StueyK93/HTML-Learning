@@ -14,3 +14,6 @@ td{
 	color:#fff;
 	font-family: sans-serif;
 }
+input, select, option{
+    color:#000000;
+}
