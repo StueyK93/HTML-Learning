@@ -29,15 +29,15 @@
 <!--Need to implement php and setup a file for processing the form-->
 	<p>
 		<label for="name">Full Name: </label>
-		<input type="text" name="name">
+		<input type="text" name="name" required="required" placeholder="Enter your name">
 	</p>
 	<p>
 		<label for="email">Email Address: </label>
-		<input type="text" name="email">
+		<input type="text" name="email" required="required" placeholder="abc@email.com">
 	</p>
 	<p>
 		<label for="phone">Contact Number: </label>
-		<input type="text" name="phone">
+		<input type="text" name="phone" required="required" placeholder="+447">
 	</p>
 	<p>
 		<label for="call">Best time to call:</label><br>
@@ -47,7 +47,7 @@
 	</p>
 	<p>
 		<label for="reason">Reason for email: </label>
-		<select type="list" name="reason">
+		<select type="list" name="reason" required="required">
 			<option>--Select--</option>
 			<option value="collab">Collaboration</option>
 			<option value="charity">Charity Event</option>
